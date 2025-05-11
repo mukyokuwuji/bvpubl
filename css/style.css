@@ -61,7 +61,6 @@ img {
     padding: 0 15px;
 }
 
-/* Header */
 .site-header {
     padding: 20px 0;
     border-bottom: 1px solid var(--border-light);
@@ -98,7 +97,6 @@ img {
     text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
     background-color: var(--background-gray);
     padding: 40px 0 45px;
@@ -236,7 +234,52 @@ img {
     margin-top: 1em;
 }
 
-/* Footer */
+.about-us .container > img.about-us-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+    margin-bottom: 25px;
+}
+
+.about-us .container > p:first-of-type {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+}
+
+.about-us .about-detailed-text {
+    margin-top: 40px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-us .about-detailed-text h3 {
+    font-size: 1.6em;
+    color: #2d3748;
+    margin-bottom: 0.8em;
+    margin-top: 1.8em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about-us .about-detailed-text h3:first-of-type {
+    margin-top: 0;
+}
+
+.about-us .about-detailed-text p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 1.2em;
+}
+
 .site-footer-bottom {
     background-color: var(--background-dark);
     color: var(--footer-text);
@@ -263,7 +306,6 @@ img {
     color: var(--footer-text);
 }
 
-/* Contact Form Styles */
 .contact-form-section {
     padding: 60px 0;
     background-color: var(--background-lighter-gray);
@@ -375,7 +417,6 @@ form .hidden {
     display: none !important;
 }
 
-/* Thank You Page Styles */
 .thank-you-message {
     text-align: center;
     padding: 80px 20px;
@@ -429,7 +470,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-/* Print Styles */
 @media print {
     body {
         font-family: 'Times New Roman', Times, serif;
@@ -505,7 +545,6 @@ html {
     }
 }
 
-/* Media Queries - Consolidated */
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: clamp(2em, 4.5vw, 2.8em);
@@ -522,6 +561,12 @@ html {
     
     .book-item {
         padding: 20px;
+    }
+    
+    .about-us .container > p:first-of-type {
+        max-width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -598,6 +643,31 @@ html {
     
     .thank-you-message p {
         font-size: 1em;
+    }
+    
+    .about-us .about-detailed-text {
+        padding: 0 10px;
+    }
+    
+    .about-us .about-detailed-text h3 {
+        font-size: 1.4em;
+        margin-top: 1.5em;
+        margin-bottom: 0.7em;
+    }
+    
+    .about-us .about-detailed-text p {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+    
+    .about-us .container > img.about-us-logo {
+        max-width: 130px;
+    }
+    
+    .about-us .container > p:first-of-type {
+        font-size: 1em;
+        max-width: 100%;
+        padding: 0 15px;
     }
 }
 
@@ -694,5 +764,31 @@ html {
     
     .thank-you-message .thank-you-main-text {
         font-size: 1.2em;
+    }
+    
+    .about-us .about-detailed-text {
+        margin-top: 30px;
+        padding: 0 5px;
+    }
+    
+    .about-us .about-detailed-text h3 {
+        font-size: 1.3em;
+        margin-top: 1.3em;
+        margin-bottom: 0.6em;
+    }
+    
+    .about-us .about-detailed-text p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+    
+    .about-us .container > img.about-us-logo {
+        max-width: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .about-us .container > p:first-of-type {
+        font-size: 0.95em;
+        padding: 0 10px;
     }
 }

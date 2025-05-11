@@ -16,7 +16,7 @@ title: "BrahmaVidya Publishing"
         <div class="book-grid">
             <div class="book-item">
                 {% image "f69d1.png", "Book cover - Polish translation of Selfless Self - Talks with Sri Ramakant Maharaj", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Selfless Self - Talks with Sri Ramakant Maharaj: Polish Translation (scheduled 2025)</h3>
+                <h3>Selfless Self - Talks with Sri Ramakant Maharaj: Polish Translation (scheduled for 2025)</h3>
                 <p class="book-author">Author: Sri Ramakant Maharaj / English original edited by Ann Shaw</p>
                 <div class="book-description">
                 <p>A translation of the priceless teachings from a Master of the Navnath Sampradaya tradition</p>
@@ -29,16 +29,16 @@ title: "BrahmaVidya Publishing"
             </div>
             <div class="book-item">
                 {% image "34e6b.png", "Book cover - Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal (scheduled 2025)</h3>
+                <h3>Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal (scheduled for 2025)</h3>
                 <div class="book-description"><p>This practical guide presents Bagua Chun Gen Qigong, a very rarely taught and never before documented system designed to promote physical wellbeing and energy cultivation. Though deceptively dissimilar to typical health exercise practices, this versatile form of Qigong offers remarkably effective benefits across multiple dimensions of wellbeing.</p>
-                <p>The flowing movements introduced in this work provide a clear pathway from fundamental techniques to more nuanced practices, making this art accessible to practitioners at all levels while preserving its authentic essence. Each exercise is presented with detailed instructions, common corrections, and progressive levels of practice to accommodate both beginners and experienced practitioners.</p>
+                <p>The deliberate practices introduced in this work provide a clear pathway from fundamental techniques to more nuanced practices, making this art accessible to practitioners at all levels while preserving its authentic essence. Each exercise is presented with detailed instructions, common corrections, and progressive levels of practice to accommodate both beginners and experienced practitioners.</p>
                 <p>Drawing from training across multiple traditions, the author shares insights gained through years of study in Mainland China, Hong Kong, Japan, Indonesia, and Thailand. This experience is complemented by over two decades of Yoga practice learned from teachers in Poland, Japan, and India, as well as certification as a Therapeutic Thai bodywork therapist and instructor through TTMA Japan.</p>
                 <p>Having taught this system in Tokyo and Vienna, and currently teaching in Seoul, the author presents these methods with practical applications for daily wellness. The system makes it particularly valuable for those navigating the challenges of contemporary life while seeking balance through traditional movement practices that deliver tangible results.</p></div>
             </div>
             <div class="book-item">
                 {% image "f7e93.png", "Book cover - Nearer Than Your Next Thought: The Presence That Burns Lifetimes", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Nearer Than Your Next Thought: The Presence That Burns Lifetimes (scheduled 2026)</h3>
-                <div class="book-description"><p>This spiritual memoir and contemplative exploration welcomes readers into the living wisdom of the ancient Navnath Sampradaya tradition. The author, having received formal initiation from Sri Ramakant Maharaj, shares insights from within this sacred lineage that flows through Matsyendranath, Gorakhnath, Siddharameshwar Maharaj, Nisargadatta Maharaj and other Sages of this revered tradition.</p>
+                <h3>Nearer Than Your Next Thought: The Presence That Burns Lifetimes (scheduled for 2026)</h3>
+                <div class="book-description"><p>This spiritual memoir and contemplative exploration welcomes readers into the living wisdom of the ancient Navnath Sampradaya tradition. The author, having received formal initiation from Sri Ramakant Maharaj, shares insights from within this sacred lineage that flows through Matsyendranath, Gorakhnath, Siddharameshwar Maharaj, Nisargadatta Maharaj, Ramakant Maharaj and other Sages of this revered tradition.</p>
                 <p>Moving beyond mere philosophy or abstract concepts, this work gently invites readers into the heart of Self-inquiry through the direct, uncompromising pointers that have characterised this lineage for centuries. The author's journey from seeker to finder—and the quiet dissolution of both—reveals how the most profound truths reside not in distant spiritual realms but in the immediate reality closer than one's very next thought.</p>
                 <p>Drawing from personal experience within this tradition, the book offers a perspective on these timeless teachings that resonates with contemporary seekers. Neither diluted spirituality nor impenetrable esotericism, these pages convey the transformative essence that has illuminated the path for generations of sincere aspirants within this lineage.</p>
                 <p>The distinguishing quality of this work lies in its steadfast focus on direct recognition rather than gradual practice—a hallmark of the Navnath approach that cuts through spiritual materialism and transcends the mind's tendency to transform profound pointers into mere concepts. For earnest spiritual seekers who have grown weary of techniques and incremental approaches, this book serves as both gentle challenge and heartfelt invitation: to recognise what has always been present, to abide as what one truly is.</p>
@@ -84,5 +84,23 @@ title: "BrahmaVidya Publishing"
         <img src="/img/9ae3510c78b10dfe4d9df080479a46e5.jpeg" alt="BrahmaVidya Publishing" class="about-us-logo">
 
         <p>A carefully selected collection of titles from BrahmaVidya Publishing's emerging catalog.</p>
+
+
+
+        <div class="about-detailed-text">
+            <h3>About the Name: BrahmaVidya Publishing</h3>
+            <p>The name BrahmaVidya Publishing reflects a core commitment to wisdom that transcends conventional understanding. "Brahma Vidya" translates to "knowledge of the Ultimate Reality" and represents profound insight that extends beyond conceptual limitations.</p>
+            <p>While this term appears in various spiritual traditions, BrahmaVidya fundamentally points to universal wisdom that transcends any single religion, mythology, or belief system. This knowledge concerns the direct exploration of consciousness and being—an inquiry available to all people regardless of background.</p>
+            <p>BrahmaVidya Publishing primarily focuses on works that illuminate this essential understanding of Ultimate Reality. However, the catalogue also includes complementary texts on practices that support holistic wellbeing, such as Qigong. These additional offerings provide practical methods that, whilst not directly addressing Ultimate Reality, offer valuable approaches to physical and energetic harmony that may serve as supportive practices for many seekers.</p>
+            <p>In alignment with this approach, future publications may include works on Yoga and related disciplines that similarly contribute to integrated wellbeing and self-understanding. These contemplative practices, whilst distinct from direct inquiry into Ultimate Reality, provide valuable complements to the core focus of BrahmaVidya's catalogue.</p>
+            <p>The central mission remains dedicated to making timeless wisdom accessible without confining it within the limitations of any particular religious framework, whilst acknowledging the diverse paths and practices that may contribute to human flourishing and understanding.</p>
+
+            <h3>Logo Usage Guidelines</h3>
+            <p>The BrahmaVidya Publishing logo is a distinctive brand element that represents a unique identity. This logo should not be modified in any manner, or displayed in a way that suggests any partnership, connection, or endorsement by BrahmaVidya Publishing of any product, service, or organisation. Please refrain from incorporating this logo into any product, business, or service name, or combining it with other graphic elements without prior written permission from BrahmaVidya Publishing.</p>
+            <p>For any enquiries regarding logo usage, such as publishing one or more works displayed on this page in cooperation with BrahmaVidya Publishing, please contact BrahmaVidya Publishing directly.</p>
+        </div>
+
+
+
     </div>
 </section>
