@@ -54,6 +54,9 @@ title: "BrahmaVidya Publishing"
         <p class="contact-subtitle-line">Questions or publication opportunities? Your message is warmly welcomed.</p>
         <p class="contact-subtitle-line">Pytania lub możliwości publikacji? Wiadomość od Ciebie jest mile widziana.</p>
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you/">
+
+        <input type="hidden" name="form-name" value="contact" />
+
             <p class="hidden" style="display:none;">
                 <label>Don’t fill this out if you’re human. / Nie wypełniaj tego pola, jeśli jesteś człowiekiem. <input name="bot-field" /></label>
             </p>
