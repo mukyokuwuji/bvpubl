@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{% if title %}{{ title }}{% else %}BrahmaVidya Publishing{% endif %}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo-link">
+                <img src="/img/9ae3510c78b10dfe4d9df080479a46e5.jpeg" alt="BrahmaVidya Publishing Logo" class="logo-image">
+            </a>
+            <nav class="main-nav"></nav>
+        </div>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+        <footer class="site-footer-bottom">
+        <div class="container">
+            <p>
+            © {{ site.currentYear }} BrahmaVidya Publishing. All rights reserved.
+            <span class="footer-separator"> | </span>
+                <a href="/#contact-form-area" class="footer-contact-link">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,698 @@
+:root {
+  --primary-color: #007bff;
+  --primary-dark: #0056b3;
+  --text-color: #333;
+  --heading-color: #1a1a1a;
+  --heading-color-dark: #2c3e50;
+  --text-light: #4a5568;
+  --text-medium: #555c66;
+  --text-dark: #2d3748;
+  --background-light: #fdfdfd;
+  --background-gray: #f0f4f8;
+  --background-lighter-gray: #f8f9fa;
+  --background-dark: #2d3748;
+  --footer-text: #a0aec0;
+  --footer-text-light: #e2e8f0;
+  --border-light: #eee;
+  --border-medium: #ced4da;
+  --shadow-light: rgba(0,0,0,0.07);
+  --shadow-medium: rgba(0,0,0,0.08);
+  --shadow-hover: rgba(0,0,0,0.1);
+  --shadow-focus: rgba(0,123,255,.25);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1.2;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.site-header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-light);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    max-height: 80px;
+}
+
+.logo-link span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.main-nav a {
+    margin-left: 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--background-gray);
+    padding: 40px 0 45px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.2em, 5vw, 2.9em);
+    margin-bottom: 0.4em;
+    color: var(--heading-color-dark);
+}
+
+.hero .subtitle {
+    font-size: clamp(1em, 2.5vw, 1.25em);
+    color: var(--text-light);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    line-height: 1.7;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: var(--primary-dark);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.upcoming-books, .about-us {
+    padding: 60px 0;
+}
+
+.upcoming-books h2, .about-us h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 2.5em;
+    color: var(--text-dark);
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.book-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-light);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-hover);
+}
+
+.book-item img {
+    width: 60%;
+    max-width: 180px;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    box-shadow: 0 3px 8px var(--shadow-light);
+}
+
+.book-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    color: var(--heading-color);
+}
+
+.book-item .book-author {
+    font-size: 0.9em;
+    color: #718096;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.book-description {
+    font-size: 0.95em;
+    color: var(--text-light);
+    line-height: 1.65;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.book-description p {
+    margin-bottom: 0.8em;
+}
+
+.book-description p:last-child {
+    margin-bottom: 0;
+}
+
+.about-us-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    margin-bottom: 25px;
+}
+
+.about-us .container > p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.about-us .container > p + p {
+    margin-top: 1em;
+}
+
+/* Footer */
+.site-footer-bottom {
+    background-color: var(--background-dark);
+    color: var(--footer-text);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.site-footer-bottom p {
+    margin: 0;
+}
+
+.site-footer-bottom a {
+    color: var(--footer-text-light);
+    font-weight: 500;
+}
+
+.site-footer-bottom a:hover {
+    color: #fff;
+}
+
+.footer-separator {
+    margin: 0 8px;
+    color: var(--footer-text);
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+    padding: 60px 0;
+    background-color: var(--background-lighter-gray);
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    font-size: clamp(1.8em, 4vw, 2.2em);
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.contact-form-section .contact-subtitle-line {
+    text-align: left;
+    font-size: 1.1em;
+    color: var(--text-medium);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.contact-form-section .contact-subtitle-line:last-of-type {
+    margin-bottom: 30px;
+}
+
+.contact-form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px var(--shadow-medium);
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #343a40;
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-medium);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    color: #495057;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem var(--shadow-focus);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: var(--heading-color-dark);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    width: auto;
+}
+
+.submit-button:hover {
+    background-color: #1a2530;
+    transform: translateY(-1px);
+}
+
+form .hidden {
+    position: absolute;
+    left: -5000px;
+    visibility: hidden;
+    display: none !important;
+}
+
+/* Thank You Page Styles */
+.thank-you-message {
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-lighter-gray);
+}
+
+.thank-you-message p {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 1.2em;
+}
+
+.thank-you-message .thank-you-main-text {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--heading-color-dark);
+    margin-bottom: 1em;
+}
+
+.thank-you-message .return-link-container {
+    margin-top: 30px;
+}
+
+.thank-you-message .return-link-container a {
+    display: inline-block;
+    background-color: var(--heading-color-dark);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thank-you-message .return-link-container a:hover {
+    background-color: #1a2530;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12pt;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .site-header,
+    .site-footer-bottom,
+    .hero .cta-button {
+        display: none !important;
+    }
+
+    .hero {
+        background-color: #fff !important;
+        padding: 20px 0;
+        text-align: left;
+    }
+    
+    .hero h1 {
+        font-size: 20pt;
+        color: #000;
+    }
+    
+    .hero .subtitle {
+        font-size: 12pt;
+        color: #333;
+    }
+
+    .upcoming-books h2,
+    .about-us h2 {
+        font-size: 16pt;
+        color: #000;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .book-grid {
+        display: block;
+    }
+    
+    .book-item {
+        display: block;
+        box-shadow: none;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+    
+    .book-item img {
+        max-width: 100px;
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after,
+    a[href^="https"]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+}
+
+/* Media Queries - Consolidated */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: clamp(2em, 4.5vw, 2.8em);
+    }
+    
+    .hero .subtitle {
+        font-size: clamp(0.95em, 2.2vw, 1.15em);
+        padding: 0 10px;
+    }
+    
+    .upcoming-books h2, .about-us h2 {
+        font-size: clamp(1.6em, 3.5vw, 1.7em);
+    }
+    
+    .book-item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .site-header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero {
+        padding: 30px 0 35px;
+    }
+    
+    .hero h1 {
+        font-size: clamp(1.8em, 6vw, 2.3em);
+    }
+    
+    .hero .subtitle {
+        font-size: clamp(0.9em, 3vw, 1.1em);
+    }
+    
+    .upcoming-books h2, .about-us h2 {
+        font-size: clamp(1.4em, 4.5vw, 1.55em);
+        margin-bottom: 35px;
+    }
+    
+    .book-item img {
+        width: 50%;
+        max-width: 150px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .book-item {
+        text-align: left;
+    }
+    
+    .book-item h3 {
+        font-size: 1.2em;
+    }
+    
+    .about-us .container > p {
+        font-size: 1em;
+    }
+    
+    .contact-form-section {
+        padding: 50px 0;
+    }
+    
+    .contact-form-section form {
+        padding: 25px;
+    }
+    
+    .contact-form-section .contact-subtitle-line {
+        font-size: 1em;
+    }
+    
+    .contact-form-section .contact-subtitle-line:last-of-type {
+        margin-bottom: 25px; 
+    }
+    
+    .thank-you-message {
+        padding: 60px 15px;
+        min-height: 50vh;
+    }
+    
+    .thank-you-message .thank-you-main-text {
+        font-size: 1.3em;
+    }
+    
+    .thank-you-message p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .hero {
+        padding: 20px 0 25px;
+    }
+    
+    .hero h1 {
+        font-size: clamp(1.6em, 7vw, 2.2em);
+        line-height: 1.3;
+    }
+    
+    .hero .subtitle {
+        font-size: clamp(0.85em, 3.5vw, 1em);
+    }
+    
+    .upcoming-books, .about-us {
+        padding: 40px 0;
+    }
+    
+    .upcoming-books h2, .about-us h2 {
+        font-size: clamp(1.3em, 5.5vw, 1.5em);
+        margin-bottom: 30px;
+    }
+    
+    .book-grid {
+        gap: 25px;
+    }
+    
+    .book-item img {
+        width: 60%;
+        max-width: 160px;
+    }
+    
+    .book-item h3 {
+        font-size: 1.15em;
+    }
+    
+    .book-description {
+        font-size: 0.9em;
+    }
+    
+    .site-footer-bottom {
+        padding: 30px 0;
+    }
+    
+    .site-footer-bottom p {
+        font-size: 0.85em;
+    }
+    
+    .contact-form-section {
+        padding: 40px 0;
+    }
+    
+    .contact-form-section h2 {
+        font-size: clamp(1.6em, 5.5vw, 2em);
+    }
+    
+    .contact-form-section .contact-subtitle-line {
+        font-size: 0.9em;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .contact-form-section .contact-subtitle-line:last-of-type {
+        margin-bottom: 20px; 
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+    
+    .submit-button,
+    .thank-you-message .return-link-container a {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.95em;
+    }
+    
+    .thank-you-message {
+        padding: 40px 10px;
+    }
+    
+    .thank-you-message .thank-you-main-text {
+        font-size: 1.2em;
+    }
+}
