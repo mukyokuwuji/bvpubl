@@ -15,7 +15,7 @@ title: "BrahmaVidya Publishing"
         <h2>Forthcoming Titles 2025 & 2026</h2>
         <div class="book-grid">
             <div class="book-item">
-                {% image "f69d1.png", "Book cover - Polish translation of Selfless Self - Talks with Sri Ramakant Maharaj", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
+                {% image "6e6c1.png", "Book cover - Polish translation of Selfless Self - Talks with Sri Ramakant Maharaj", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
                 <h3>Selfless Self - Talks with Sri Ramakant Maharaj: Polish Translation (scheduled for 2025)</h3>
                 <p class="book-author">Author: Sri Ramakant Maharaj / English original edited by Ann Shaw</p>
                 <div class="book-description">
