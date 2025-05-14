@@ -1,32 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% if lang %}{{ lang }}{% else %}en-GB{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>{% if title %}{{ title }}{% else %}BrahmaVidya Publishing{% endif %}</title>
+
+    {% set actualTranslationsMap = translations.default %}
+    
+    {# Hreflang Links Generation - using translations #}
+    {% if translationKey and lang and actualTranslationsMap[translationKey] %}
+        <link rel="alternate" hreflang="{{ lang }}" href="{{ page.url | url }}" />
+        {% for langCode, langUrl in actualTranslationsMap[translationKey] %}
+            {% if langCode != lang %}
+                <link rel="alternate" hreflang="{{ langCode }}" href="{{ langUrl | url }}" />
+            {% endif %}
+        {% endfor %}
+        {% set defaultLang = 'en-GB' %} {# Or 'pl' - your chosen default language for x-default #}
+        {% if actualTranslationsMap[translationKey][defaultLang] %}
+             <link rel="alternate" hreflang="x-default" href="{{ actualTranslationsMap[translationKey][defaultLang] | url }}" />
+        {% else %}
+             {# Fallback for x-default if the specified defaultLang isn't in the map for this key #}
+             {# This could point to the current page's English version if it exists, or a general English homepage #}
+             {% if actualTranslationsMap[translationKey]['en-GB'] %}
+                <link rel="alternate" hreflang="x-default" href="{{ actualTranslationsMap[translationKey]['en-GB'] | url }}" />
+             {% endif %}
+        {% endif %}
+    {% endif %}
+
+    <title>{% if title %}{{ title }}{% else %}BrahmaVidya Publishing{% endif %}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,700&display=swap" rel="stylesheet" />
+    <style>
+      html { 
+        scroll-behavior: smooth; 
+        -webkit-text-size-adjust: 100%; 
+      }
+    </style>
 </head>
 <body>
+
     <header class="site-header">
         <div class="container">
-            <a href="/" class="logo-link">
+            <a href="{{ '/' | url }}" class="logo-link"> {# Links to root, will be redirected by Netlify's _redirects #}
                 <img src="/img/9ae3510c78b10dfe4d9df080479a46e5.jpeg" alt="BrahmaVidya Publishing Logo" class="logo-image">
             </a>
-            <nav class="main-nav"></nav>
+            <nav class="language-switcher">
+
+             {% if not hideSwitcher %}
+
+                {% if translationKey and lang and actualTranslationsMap[translationKey] %}
+                    {# Define available languages and their display names #}
+                    {% set availableLangs = {'en-GB': 'English', 'pl': 'Polski'} %}
+                    
+                    {# Create an empty array to hold the HTML for each link/span #}
+                    {% set linksOutput = [] %}
+
+                    {% for langCode, langName in availableLangs %}
+                        {# Check if a translation URL actually exists for this langCode and current page's translationKey #}
+                        {% if actualTranslationsMap[translationKey][langCode] %}
+                            {% if langCode == lang %}
+                                {# Current language: display as text (span) #}
+                                {% set linkHtmlString = '<span class="current-lang" aria-current="page">' ~ langName ~ '</span>' %}
+                            {% else %}
+                                {# Other language: display as a link #}
+                                {% set linkUrl = actualTranslationsMap[translationKey][langCode] | url %}
+                                {% set linkHtmlString = '<a href="' ~ linkUrl ~ '" lang="' ~ langCode ~ '" hreflang="' ~ langCode ~ '" class="lang-link">' ~ langName ~ '</a>' %}
+                            {% endif %}
+                            {# Add the generated HTML string to our array #}
+                            {% set linksOutput = linksOutput.concat([linkHtmlString]) %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {# Now, join all the collected HTML strings with the separator #}
+                    {# The |safe filter is crucial here because we are outputting HTML #}
+                    {{ linksOutput | join('<span class="lang-separator"> | </span>') | safe }}
+
+                {% else %}
+                    <!-- Optional: Fallback message if no translation data is found for the current page -->
+                    <!-- This indicates an issue with translationKey, lang, or the translations map -->
+                    <!-- <p style="color:red; font-size:10px;">Language switcher data unavailable.</p> -->
+                {% endif %}
+
+             {% endif %}
+
+            </nav>
         </div>
     </header>
+
     <main>
         {{ content | safe }}
     </main>
-        <footer class="site-footer-bottom">
+
+    <footer class="site-footer-bottom">
         <div class="container">
-            <p>
-            © {{ site.currentYear }} BrahmaVidya Publishing. All rights reserved.
-            <span class="footer-separator"> | </span>
-                <a href="/#contact-form-area" class="footer-contact-link">Contact</a>
-            </p>
+            {# Using the more robust i18n data file approach for footer text (if you implement it) #}
+            {# For now, using the simpler if/else as discussed #}
+            {% if lang == 'pl' %}
+                <p>
+                    © {{ site.currentYear }} BrahmaVidya Publishing. Wszelkie prawa zastrzeżone.
+                    <span class="footer-separator">|</span>
+                    <a href="/pl/#contact-form-area" class="footer-contact-link">Kontakt</a>
+                </p>
+            {% elif lang == 'en-GB' %} {# Specifically check for en-GB #}
+                 <p>
+                    © {{ site.currentYear }} BrahmaVidya Publishing. All rights reserved.
+                    <span class="footer-separator">|</span>
+                    <a href="/en/#contact-form-area" class="footer-contact-link">Contact</a>
+                </p>
+            {% else %}
+                 {# Fallback for pages like thank-you.md if its lang is not pl or en-GB, or if lang is undefined #}
+                 {# Assuming thank-you.md has lang: 'en-GB', this branch might not be hit often if lang is always set #}
+                 <p>
+                    © {{ site.currentYear }} BrahmaVidya Publishing. All rights reserved.
+                    <span class="footer-separator">|</span>
+                    {# Link to root homepage contact, which will redirect to /en/ #}
+                    <a href="/#contact-form-area" class="footer-contact-link">Contact</a>
+                </p>
+            {% endif %}
         </div>
     </footer>
 </body>

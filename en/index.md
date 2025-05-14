@@ -1,6 +1,9 @@
 ---
 layout: base.njk
 title: "BrahmaVidya Publishing"
+permalink: /en/
+translationKey: "home"
+# lang: "en-GB"
 ---
 
 <section class="hero">
@@ -23,7 +26,7 @@ title: "BrahmaVidya Publishing"
                 <p>Immerse yourself in the profound wisdom of one of the last true Masters of non-duality. "Selfless Self" is an extraordinary collection of conversations with Sri Ramakant Maharaj, a direct disciple to the renowned Sri Nisargadatta Maharaj, conveying the essence of the timeless teachings of the Navnath Sampradaya tradition.</p>
                 <p>This unique book guides readers through the fundamental questions of human existence - Who am I? Where do I come from? What is the nature of reality? - offering deep, transformative answers that transcend intellectual concepts.</p>
                 <p>Sri Ramakant Maharaj, like his predecessors in the lineage of Masters including Sri Nisargadatta Maharaj and Siddharameshwar Maharaj, points to the direct path to recognising one's true nature, beyond all limitations.</p>
-                <p>The original English text was edited by Ann Shaw, whilst the Polish translation has been prepared by another humble disciple of Sri Ramakant Maharaj; both were initiated into the Nath tradition, seeking only to faithfully convey the depth and power of their beloved Master's teachings.</p>
+                <p>The original English text was edited by Ann Shaw, whilst the Polish translation has been prepared by another disciple of Sri Ramakant Maharaj; both were initiated into the Nath tradition, seeking only to faithfully convey the depth and power of their beloved Master's teachings.</p>
                 <p>For those seeking authentic spiritual wisdom, this book serves as an invaluable guide leading to the discovery of that which has always been present - the unlimited, unchanging reality beyond all concepts, time and space.</p>
                 </div>
             </div>
@@ -32,7 +35,7 @@ title: "BrahmaVidya Publishing"
                 <h3>Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal (scheduled for 2025)</h3>
                 <div class="book-description"><p>This practical guide presents Bagua Chun Gen Qigong, a very rarely taught and never before documented system designed to promote physical wellbeing and energy cultivation. Though deceptively dissimilar to typical health exercise practices, this versatile form of Qigong offers remarkably effective benefits across multiple dimensions of wellbeing.</p>
                 <p>The deliberate practices introduced in this work provide a clear pathway from fundamental techniques to more nuanced practices, making this art accessible to practitioners at all levels while preserving its authentic essence. Each exercise is presented with detailed instructions, common corrections, and progressive levels of practice to accommodate both beginners and experienced practitioners.</p>
-                <p>Drawing from training across multiple traditions, the author shares insights gained through years of study in Mainland China, Hong Kong, Japan, Indonesia, and Thailand. This experience is complemented by over two decades of Yoga practice learned from teachers in Poland, Japan, and India, as well as certification as a Therapeutic Thai bodywork therapist and instructor through TTMA Japan.</p>
+                <p>Drawing from training across multiple traditions, the author shares insights gained through years of study in Mainland China, Hong Kong, Japan, Indonesia, and Thailand. This experience is complemented by over two decades of Yoga practice learned from teachers in Japan and India, as well as certification as a Therapeutic Thai bodywork therapist and instructor through TTMA Japan.</p>
                 <p>Having taught this system in Tokyo and Vienna, and currently teaching in Seoul, the author presents these methods with practical applications for daily wellness. The system makes it particularly valuable for those navigating the challenges of contemporary life while seeking balance through traditional movement practices that deliver tangible results.</p></div>
             </div>
             <div class="book-item">
@@ -52,16 +55,15 @@ title: "BrahmaVidya Publishing"
     <div class="container">
         <h2>Contact</h2>
         <p class="contact-subtitle-line">Questions or publication opportunities? Your message is warmly welcomed.</p>
-        <p class="contact-subtitle-line">Pytania lub możliwości publikacji? Wiadomość od Ciebie jest mile widziana.</p>
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you/">
 
         <input type="hidden" name="form-name" value="contact" />
 
             <p class="hidden" style="display:none;">
-                <label>Don’t fill this out if you’re human. / Nie wypełniaj tego pola, jeśli jesteś człowiekiem. <input name="bot-field" /></label>
+                <label>Don’t fill this out if you’re human. <input name="bot-field" /></label>
             </p>
             <div class="form-group">
-                <label for="name">Name / Imię:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
@@ -69,11 +71,11 @@ title: "BrahmaVidya Publishing"
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="message">Message / Wiadomość:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="submit-button">Send message / Wyślij wiadomość</button>
+                <button type="submit" class="submit-button">Send message</button>
             </div>
         </form>
     </div>
@@ -83,7 +85,7 @@ title: "BrahmaVidya Publishing"
     <div class="container">
         <img src="/img/9ae3510c78b10dfe4d9df080479a46e5.jpeg" alt="BrahmaVidya Publishing" class="about-us-logo">
 
-        <p>A carefully selected collection of titles from BrahmaVidya Publishing's emerging catalog.</p>
+        <p>A carefully selected collection of titles from BrahmaVidya Publishing's emerging catalog</p>
 
 
 
@@ -92,7 +94,7 @@ title: "BrahmaVidya Publishing"
             <p>The name BrahmaVidya Publishing reflects a core commitment to wisdom that transcends conventional understanding. "Brahma Vidya" translates to "knowledge of the Ultimate Reality" and represents profound insight that extends beyond conceptual limitations.</p>
             <p>While this term appears in various spiritual traditions, BrahmaVidya fundamentally points to universal wisdom that transcends any single religion, mythology, or belief system. This knowledge concerns the direct exploration of consciousness and being—an inquiry available to all people regardless of background.</p>
             <p>BrahmaVidya Publishing primarily focuses on works that illuminate this essential understanding of Ultimate Reality. However, the catalogue also includes complementary texts on practices that support holistic wellbeing, such as Qigong. These additional offerings provide practical methods that, whilst not directly addressing Ultimate Reality, offer valuable approaches to physical and energetic harmony that may serve as supportive practices for many seekers.</p>
-            <p>In alignment with this approach, future publications may include works on Yoga and related disciplines that similarly contribute to integrated wellbeing and self-understanding. These contemplative practices, whilst distinct from direct inquiry into Ultimate Reality, provide valuable complements to the core focus of BrahmaVidya's catalogue.</p>
+            <p>In alignment with this approach, future publications may include works on Yoga and related disciplines that similarly contribute to integrated wellbeing and self-understanding. These contemplative practices, whilst distinct from direct inquiry into Ultimate Reality, provide valuable complements to the core focus of BrahmaVidya Publishing's catalogue.</p>
             <p>The central mission remains dedicated to making timeless wisdom accessible without confining it within the limitations of any particular religious framework, whilst acknowledging the diverse paths and practices that may contribute to human flourishing and understanding.</p>
 
             <h3>Logo Usage Guidelines</h3>

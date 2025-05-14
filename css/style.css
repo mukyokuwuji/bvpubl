@@ -76,6 +76,47 @@ img {
     align-items: center;
 }
 
+
+
+
+
+.language-switcher {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 8px; /* Space between items (links and separators) */
+}
+
+.language-switcher .current-lang {
+    color: #555; /* Color for the current language text */
+    font-weight: 700; /* Make current language bold */
+    padding: 5px 8px; /* Add some padding */
+}
+
+.language-switcher .lang-link {
+    color: #007bff; /* Use link color */
+    text-decoration: none;
+    padding: 5px 8px; /* Add some padding */
+    border-radius: 4px; /* Optional rounded corners */
+    transition: background-color 0.2s ease;
+}
+
+.language-switcher .lang-link:hover {
+    background-color: #f0f4f8; /* Subtle background on hover */
+    text-decoration: none;
+}
+
+.language-switcher .lang-separator {
+    color: #ccc; /* Light color for the separator */
+    font-size: 0.9em;
+    /* Remove gap before separator if using flex gap */
+    /* margin-left: -4px; */ /* Adjust if needed based on gap */
+    /* margin-right: -4px; */
+}
+
+
+
+
+
 .logo-image {
     max-height: 80px;
 }
@@ -580,6 +621,19 @@ html {
         gap: 10px;
     }
     
+
+
+
+
+    .language-switcher {
+       margin-top: 10px; /* Add space above if header stacks */
+       justify-content: center; /* Center the switcher items if header stacks */
+    }
+
+
+
+
+
     .hero {
         padding: 30px 0 35px;
     }
