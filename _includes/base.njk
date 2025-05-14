@@ -39,6 +39,21 @@
 </head>
 <body>
 
+
+
+
+
+<p style="background:yellow; color:black; padding:5px;">
+    DEBUG All translations object: {{ translations | dump | safe }} <br>
+    DEBUG Using translations.default: {{ translations.default | dump | safe }} <br>
+    DEBUG Variable actualTranslationsMap: {{ actualTranslationsMap | dump | safe }}
+</p>
+
+
+
+
+
+
     <header class="site-header">
         <div class="container">
             <a href="{{ '/' | url }}" class="logo-link"> {# Links to root, will be redirected by Netlify's _redirects #}

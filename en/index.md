@@ -3,8 +3,19 @@ layout: base.njk
 title: "BrahmaVidya Publishing"
 permalink: /en/
 translationKey: "home"
-# lang: "en-GB"
 ---
+
+{# START DEBUG DIV FOR ENGLISH PAGE #}
+<div style="background:lime; color:black; font-size:16px; padding:10px; border:2px solid red; position:fixed; top:0; left:0; z-index:9999; width:100%;">
+    EN PAGE DEBUG:<br>
+    Lang: [{{ lang }}]<br>
+    TranslationKey: [{{ translationKey }}]<br>
+    Page URL: [{{ page.url }}]<br>
+    actualTranslationsMap for 'home': [{{ actualTranslationsMap.home | dump }}]<br>
+    actualTranslationsMap for 'home' EN URL: [{{ actualTranslationsMap.home['en-GB'] }}]<br>
+    actualTranslationsMap for 'home' PL URL: [{{ actualTranslationsMap.home['pl'] }}]
+</div>
+{# END DEBUG DIV #}
 
 <section class="hero">
     <div class="container">
