@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {# --- START: Define actualTranslationsMap & Hreflang --- #}
+    {# Attempt to get the clean map from translations.default #}
     {% set actualTranslationsMap = translations.default %}
-    
-    {# Hreflang Links Generation - using translations #}
-    {% if translationKey and lang and actualTranslationsMap[translationKey] %}
+    {# If translations.default was empty or not structured as expected, 
+       you could try translations.module.exports as an alternative here, 
+       but let's test with .default first based on the dump output.
+    #}
+    {# {% set actualTranslationsMap = translations.module.exports %} #}
+
+
+    {% if translationKey and lang and actualTranslationsMap and actualTranslationsMap[translationKey] %}
         <link rel="alternate" hreflang="{{ lang }}" href="{{ page.url | url }}" />
         {% for langCode, langUrl in actualTranslationsMap[translationKey] %}
             {% if langCode != lang %}
                 <link rel="alternate" hreflang="{{ langCode }}" href="{{ langUrl | url }}" />
             {% endif %}
         {% endfor %}
-        {% set defaultLang = 'en-GB' %} {# Or 'pl' - your chosen default language for x-default #}
+        {% set defaultLang = 'en-GB' %}
         {% if actualTranslationsMap[translationKey][defaultLang] %}
              <link rel="alternate" hreflang="x-default" href="{{ actualTranslationsMap[translationKey][defaultLang] | url }}" />
-        {% else %}
-             {# Fallback for x-default if the specified defaultLang isn't in the map for this key #}
-             {# This could point to the current page's English version if it exists, or a general English homepage #}
-             {% if actualTranslationsMap[translationKey]['en-GB'] %}
-                <link rel="alternate" hreflang="x-default" href="{{ actualTranslationsMap[translationKey]['en-GB'] | url }}" />
-             {% endif %}
+        {% elif actualTranslationsMap[translationKey]['en-GB'] %}
+            <link rel="alternate" hreflang="x-default" href="{{ actualTranslationsMap[translationKey]['en-GB'] | url }}" />
         {% endif %}
     {% endif %}
+    {# --- END: Define actualTranslationsMap & Hreflang --- #}
 
     <title>{% if title %}{{ title }}{% else %}BrahmaVidya Publishing{% endif %}</title>
     <link rel="stylesheet" href="/css/style.css">
@@ -39,65 +43,47 @@
 </head>
 <body>
 
-
-
-
-
-<p style="background:yellow; color:black; padding:5px;">
-    DEBUG All translations object: {{ translations | dump | safe }} <br>
-    DEBUG Using translations.default: {{ translations.default | dump | safe }} <br>
-    DEBUG Variable actualTranslationsMap: {{ actualTranslationsMap | dump | safe }}
-</p>
-
-
-
-
-
+    {# --- START: Main Yellow Debug Box --- #}
+    <p style="background:yellow; color:black; padding:10px; border:1px solid red; font-size:12px; line-height:1.4; z-index: 10000; position: relative;">
+        <strong>BASE.NJK DEBUG:</strong><br>
+        Full 'translations' object: <pre style="white-space: pre-wrap; word-break: break-all;">{{ translations | dump(2) | safe }}</pre><br>
+        Trying 'translations.default': <pre style="white-space: pre-wrap; word-break: break-all;">{{ translations.default | dump(2) | safe }}</pre><br>
+        Value of 'actualTranslationsMap': <pre style="white-space: pre-wrap; word-break: break-all;">{{ actualTranslationsMap | dump(2) | safe }}</pre><br>
+        Page 'lang': [{{ lang }}]<br>
+        Page 'translationKey': [{{ translationKey }}]<br>
+        Page 'page.url': [{{ page.url }}]
+    </p>
+    {# --- END: Main Yellow Debug Box --- #}
 
     <header class="site-header">
         <div class="container">
-            <a href="{{ '/' | url }}" class="logo-link"> {# Links to root, will be redirected by Netlify's _redirects #}
+            <a href="{{ '/' | url }}" class="logo-link">
                 <img src="/img/9ae3510c78b10dfe4d9df080479a46e5.jpeg" alt="BrahmaVidya Publishing Logo" class="logo-image">
             </a>
             <nav class="language-switcher">
-
-             {% if not hideSwitcher %}
-
-                {% if translationKey and lang and actualTranslationsMap[translationKey] %}
-                    {# Define available languages and their display names #}
+             {% if not hideSwitcher %} {# Allows hiding switcher on specific pages like thank-you.md #}
+                {# Ensure actualTranslationsMap is defined and has the key before proceeding #}
+                {% if translationKey and lang and actualTranslationsMap and actualTranslationsMap[translationKey] %}
                     {% set availableLangs = {'en-GB': 'English', 'pl': 'Polski'} %}
-                    
-                    {# Create an empty array to hold the HTML for each link/span #}
                     {% set linksOutput = [] %}
 
                     {% for langCode, langName in availableLangs %}
-                        {# Check if a translation URL actually exists for this langCode and current page's translationKey #}
                         {% if actualTranslationsMap[translationKey][langCode] %}
                             {% if langCode == lang %}
-                                {# Current language: display as text (span) #}
                                 {% set linkHtmlString = '<span class="current-lang" aria-current="page">' ~ langName ~ '</span>' %}
                             {% else %}
-                                {# Other language: display as a link #}
                                 {% set linkUrl = actualTranslationsMap[translationKey][langCode] | url %}
                                 {% set linkHtmlString = '<a href="' ~ linkUrl ~ '" lang="' ~ langCode ~ '" hreflang="' ~ langCode ~ '" class="lang-link">' ~ langName ~ '</a>' %}
                             {% endif %}
-                            {# Add the generated HTML string to our array #}
                             {% set linksOutput = linksOutput.concat([linkHtmlString]) %}
                         {% endif %}
                     {% endfor %}
-
-                    {# Now, join all the collected HTML strings with the separator #}
-                    {# The |safe filter is crucial here because we are outputting HTML #}
                     {{ linksOutput | join('<span class="lang-separator"> | </span>') | safe }}
-
                 {% else %}
-                    <!-- Optional: Fallback message if no translation data is found for the current page -->
-                    <!-- This indicates an issue with translationKey, lang, or the translations map -->
-                    <!-- <p style="color:red; font-size:10px;">Language switcher data unavailable.</p> -->
+                    <!-- Switcher Data Problem: translationKey, lang, or actualTranslationsMap[translationKey] is missing/false -->
+                    <!-- To debug this, check the yellow box values for lang, translationKey, and actualTranslationsMap -->
                 {% endif %}
-
              {% endif %}
-
             </nav>
         </div>
     </header>
@@ -108,27 +94,22 @@
 
     <footer class="site-footer-bottom">
         <div class="container">
-            {# Using the more robust i18n data file approach for footer text (if you implement it) #}
-            {# For now, using the simpler if/else as discussed #}
             {% if lang == 'pl' %}
                 <p>
                     © {{ site.currentYear }} BrahmaVidya Publishing. Wszelkie prawa zastrzeżone.
                     <span class="footer-separator">|</span>
                     <a href="/pl/#contact-form-area" class="footer-contact-link">Kontakt</a>
                 </p>
-            {% elif lang == 'en-GB' %} {# Specifically check for en-GB #}
+            {% elif lang == 'en-GB' %}
                  <p>
                     © {{ site.currentYear }} BrahmaVidya Publishing. All rights reserved.
                     <span class="footer-separator">|</span>
                     <a href="/en/#contact-form-area" class="footer-contact-link">Contact</a>
                 </p>
             {% else %}
-                 {# Fallback for pages like thank-you.md if its lang is not pl or en-GB, or if lang is undefined #}
-                 {# Assuming thank-you.md has lang: 'en-GB', this branch might not be hit often if lang is always set #}
                  <p>
                     © {{ site.currentYear }} BrahmaVidya Publishing. All rights reserved.
                     <span class="footer-separator">|</span>
-                    {# Link to root homepage contact, which will redirect to /en/ #}
                     <a href="/#contact-form-area" class="footer-contact-link">Contact</a>
                 </p>
             {% endif %}
