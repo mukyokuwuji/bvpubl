@@ -43,18 +43,6 @@
 </head>
 <body>
 
-    {# --- START: Main Yellow Debug Box --- #}
-    <p style="background:yellow; color:black; padding:10px; border:1px solid red; font-size:12px; line-height:1.4; z-index: 10000; position: relative;">
-        <strong>BASE.NJK DEBUG:</strong><br>
-        Full 'translations' object: <pre style="white-space: pre-wrap; word-break: break-all;">{{ translations | dump(2) | safe }}</pre><br>
-        Trying 'translations.default': <pre style="white-space: pre-wrap; word-break: break-all;">{{ translations.default | dump(2) | safe }}</pre><br>
-        Value of 'actualTranslationsMap': <pre style="white-space: pre-wrap; word-break: break-all;">{{ actualTranslationsMap | dump(2) | safe }}</pre><br>
-        Page 'lang': [{{ lang }}]<br>
-        Page 'translationKey': [{{ translationKey }}]<br>
-        Page 'page.url': [{{ page.url }}]
-    </p>
-    {# --- END: Main Yellow Debug Box --- #}
-
     <header class="site-header">
         <div class="container">
             <a href="{{ '/' | url }}" class="logo-link">
