@@ -80,6 +80,9 @@ module.exports = function(eleventyConfig) {
 
     // Passthrough copy for existing static assets
     // (eleventy-img handles its own output, so 'img/optimized/' doesn't need passthrough)
+
+    eleventyConfig.addPassthroughCopy("_redirects");
+
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("img"); // For any other images not processed by eleventy-img (like your logo)
 

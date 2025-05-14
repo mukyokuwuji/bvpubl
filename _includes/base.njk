@@ -6,7 +6,7 @@
 
     {# --- START: Define actualTranslationsMap & Hreflang --- #}
     {# Attempt to get the clean map from translations.default #}
-    {% set actualTranslationsMap = translations.default %}
+    {% set actualTranslationsMap = translations %}
     {# If translations.default was empty or not structured as expected, 
        you could try translations.module.exports as an alternative here, 
        but let's test with .default first based on the dump output.
