@@ -617,8 +617,12 @@ html {
     }
     
     .site-header .container {
-        flex-direction: column;
-        gap: 10px;
+        /* Remove stacking: */
+        /* flex-direction: column; */ 
+        /* gap: 10px; */
+        flex-wrap: wrap; /* Allow items to wrap if they don't fit */
+        justify-content: space-between; /* Keep logo left, switcher right */
+        align-items: center;
     }
     
 
@@ -626,8 +630,27 @@ html {
 
 
     .language-switcher {
-       margin-top: 10px; /* Add space above if header stacks */
-       justify-content: center; /* Center the switcher items if header stacks */
+       /* margin-top: 10px; */ /* Remove top margin if not stacking */
+       /* justify-content: center; */ /* Remove if not stacking and centered */
+       gap: 6px; /* Slightly reduce gap between lang items */
+    }
+
+
+
+
+
+    .language-switcher .current-lang,
+    .language-switcher .lang-link {
+        font-size: 0.85em; /* Make language switcher text smaller */
+        padding: 4px 6px;  /* Reduce padding */
+    }
+
+
+
+
+
+    .language-switcher .lang-separator {
+        font-size: 0.8em;
     }
 
 
