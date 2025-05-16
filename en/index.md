@@ -84,21 +84,27 @@ translationKey: "home"
     <div class="container">
         <img src="/img/9ae3510c78b10dfe4d9df080479a46e5.jpeg" alt="BrahmaVidya Publishing" class="about-us-logo">
 
-        <p>A carefully selected collection of titles from BrahmaVidya Publishing's emerging catalog</p>
+        <p>A carefully selected collection of titles from the emerging catalog of BrahmaVidya Publishing</p>
 
 
 
         <div class="about-detailed-text">
             <h3>About the Name: BrahmaVidya Publishing</h3>
-            <p>The name BrahmaVidya Publishing reflects a core commitment to wisdom that transcends conventional understanding. Brahma Vidya translates to "knowledge of the Ultimate Reality" and represents profound insight that extends beyond conceptual limitations.</p>
-            <p>While this term appears in various spiritual traditions, Brahma Vidya fundamentally points to universal wisdom that transcends any single religion, mythology, or belief system. This knowledge concerns the direct exploration of consciousness and being—an inquiry available to all people regardless of background.</p>
-            <p>BrahmaVidya Publishing primarily focuses on works that illuminate this essential understanding of Ultimate Reality. However, the catalogue also includes complementary texts on practices that support holistic wellbeing, such as Qigong. These additional offerings provide practical methods that, whilst not directly addressing Ultimate Reality, offer valuable approaches to physical and energetic harmony that may serve as supportive practices for many seekers.</p>
-            <p>In alignment with this approach, future publications may include works on Yoga and related disciplines that similarly contribute to integrated wellbeing and self-understanding. These contemplative practices, whilst distinct from direct inquiry into Ultimate Reality, provide valuable complements to the core focus of BrahmaVidya Publishing's catalogue.</p>
-            <p>The central mission remains dedicated to making timeless wisdom accessible without confining it within the limitations of any particular religious framework, whilst acknowledging the diverse paths and practices that may contribute to human flourishing and understanding.</p>
+            <p>The name “BrahmaVidya Publishing” reflects a commitment to wisdom that transcends conventional understanding. “Brahma Vidya” translates as “knowledge of the Ultimate Reality” and denotes profound insight extending beyond conceptual limitations.</p>
+            <p>This term appears in diverse spiritual traditions, yet Brahma Vidya fundamentally points to universal wisdom that transcends any single religion, mythology, or belief system. The focus is on the direct exploration of consciousness and being—an inquiry accessible to all, regardless of background.</p>
+            <p>The current catalog centers on works that illuminate this essential understanding of Ultimate Reality. Complementary texts on practices supporting holistic wellbeing, such as Qigong, are also included. These additional offerings provide practical methods that, while not directly addressing Ultimate Reality, offer valuable approaches to physical and energetic harmony and may serve as supportive practices for many seekers.</p>
+            <p>Future publications may include works on Yoga and related disciplines that likewise contribute to integrated wellbeing and self-understanding. These contemplative practices, while distinct from direct inquiry into Ultimate Reality, provide valuable complements to the core focus of the catalog.</p>
+            <p>The central mission is to make timeless wisdom accessible without confining it within the limitations of any particular religious framework, while acknowledging the diverse paths and practices that may contribute to human flourishing and understanding.</p>
+
+            <h3>Publishing Opportunities</h3>
+            <p>BrahmaVidya Publishing is currently presenting three original works for consideration by established publishers and literary agents. The exclusive translation copyright for the Polish edition of ‘Selfless Self - Talks with Sri Ramakant Maharaj’ is retained by the translator, Sebastian Kumos, who holds this copyright in perpetuity; publishing and licensing inquiries for publication rights (non-exclusive) are welcome. The catalog is not available for self-publication or direct-to-customer sales at this time, though such options may be considered in the future. All other rights pertaining to books other than any edition of ‘Selfless Self - Talks with Sri Ramakant Maharaj’ are available for publication of the English originals and for translation into any language; interested parties are invited to make inquiries regarding collaboration or acquisition.</p>
+
+            <h3>Note on Covers</h3>
+            <p>All cover images shown are mockups for illustrative purposes only and do not represent final published editions.</p>
 
             <h3>Logo Usage Guidelines</h3>
-            <p>The BrahmaVidya Publishing logo is a distinctive brand element that represents a unique identity. This logo should not be modified in any manner, or displayed in a way that suggests any partnership, connection, or endorsement by BrahmaVidya Publishing of any product, service, or organisation. Please refrain from incorporating this logo into any product, business, or service name, or combining it with other graphic elements without prior written permission from BrahmaVidya Publishing.</p>
-            <p>For any enquiries regarding logo usage, such as publishing one or more works displayed on this page in cooperation with BrahmaVidya Publishing, please contact BrahmaVidya Publishing directly.</p>
+            <p>The BrahmaVidya Publishing logo serves as a distinctive brand element. The logo must not be modified or displayed in a manner suggesting partnership, connection, or endorsement by BrahmaVidya Publishing of any product, service, or organization. Incorporation of the logo into any product, business, or service name, or combination with other graphic elements, requires prior written permission.</p>
+            <p>For all logo usage and rights inquiries, contact is welcomed via the contact form provided on this web page.</p>
         </div>
 
 
