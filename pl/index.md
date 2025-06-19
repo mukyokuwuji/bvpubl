@@ -7,8 +7,7 @@ translationKey: "home"
 
 <section class="hero">
     <div class="container">
-        <h1>Rozświetlająca mądrość, opiekuńcza obecność</h1>
-        <p class="subtitle">Ponadczasowa mądrość i praktyki ucieleśnione</p>
+        <p class="subtitle">Publikacje o Navnath Sampradaya a także o doczesnych praktykach uzdrawiających</p>
     </div>
 </section>
 

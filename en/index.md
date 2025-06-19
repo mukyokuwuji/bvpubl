@@ -7,8 +7,7 @@ translationKey: "home"
 
 <section class="hero">
     <div class="container">
-        <h1>Illuminating Wisdom, Nurturing Presence</h1>
-        <p class="subtitle">Timeless wisdom and embodied practices</p>
+        <p class="subtitle">Publications on Navnath Sampradaya and occasionally on mundane healing practices</p>
     </div>
 </section>
 
