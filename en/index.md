@@ -7,7 +7,7 @@ translationKey: "home"
 
 <section class="hero">
     <div class="container">
-        <p class="subtitle">Publications on the Supreme Non-dual Reality and occasionally on mundane healing practices</p>
+        <p class="subtitle">Publications on the Supreme Non-Dual Reality and occasionally on mundane healing practices</p>
     </div>
 </section>
 
