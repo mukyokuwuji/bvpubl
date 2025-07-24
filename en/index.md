@@ -24,7 +24,7 @@ translationKey: "home"
                 <p>Immerse yourself in the profound wisdom of one of the last true Masters of non-duality. “Selfless Self” is an extraordinary collection of conversations with Sri Ramakant Maharaj, a direct disciple to the renowned Sri Nisargadatta Maharaj, conveying the essence of the timeless teachings of the Navnath Sampradaya tradition.</p>
                 <p>This unique book guides readers through the fundamental questions of human existence - Who am I? Where do I come from? What is the nature of reality? - offering deep, transformative answers that transcend intellectual concepts.</p>
                 <p>Sri Ramakant Maharaj, like his predecessors in the lineage of Masters including Sri Nisargadatta Maharaj and Siddharameshwar Maharaj, points to the direct path to recognising one's true nature, beyond all limitations.</p>
-                <p>The original English text was edited by Ann Shaw, whilst the Polish translation has been prepared by another disciple of Sri Ramakant Maharaj; both were initiated into the Nath tradition, seeking only to faithfully convey the depth and power of their beloved Master's teachings.</p>
+                <p>The original English text was edited by Ann Shaw, while the Polish translation has been prepared by another disciple of Sri Ramakant Maharaj; both were initiated into the Nath tradition, seeking only to faithfully convey the depth and power of their beloved Master's teachings.</p>
                 <p>For those seeking authentic spiritual wisdom, this book serves as an invaluable guide leading to the discovery of that which has always been present - the unlimited, unchanging reality beyond all concepts, time and space.</p>
                 </div>
             </div>
