@@ -13,11 +13,11 @@ translationKey: "home"
 
 <section id="books" class="upcoming-books">
     <div class="container">
-        <h2>Nadchodzące tytuły 2025 i 2026</h2>
+        <h2>Nadchodzące tytuły</h2>
         <div class="book-grid">
             <div class="book-item">
                 {% image "6e6c1.png", "Okładka książki - polskie tłumaczenie Selfless Self", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Bezosobowa Jaźń – rozmowy z Mistrzem Śri Ramakantem Maharadżem: polskie tłumaczenie (wydanie planowane na 2025 rok)</h3>
+                <h3>Bezosobowa Jaźń – rozmowy z Mistrzem Śri Ramakantem Maharadżem: polskie tłumaczenie (wydanie planowane na 2026 rok)</h3>
                 <p class="book-author">Autor: Śri Ramakant Maharadż / oryginał angielski pod redakcją Ann Shaw</p>
                 <div class="book-description">
                 <p>Tłumaczenie bezcennych nauk Mistrza tradycji Navnath Sampradaya</p>
@@ -30,7 +30,7 @@ translationKey: "home"
             </div>
             <div class="book-item">
                 {% image "34e6b.png", "Okładka książki - Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Qigong „Bagua Chun Gen”: system dla zdrowia, ugruntowania i odnowy (wydanie planowane na 2025 rok – język angielski)</h3>
+                <h3>Qigong „Bagua Chun Gen”: system dla zdrowia, ugruntowania i odnowy (wydanie planowane na 2026 rok – język angielski)</h3>
                 <div class="book-description"><p>Ten praktyczny przewodnik przedstawia Qigong „Bagua Chun Gen”, bardzo rzadko nauczany i nigdy wcześniej nieudokumentowany system zaprojektowany w celu promowania fizycznego dobrostanu i kultywacji energii. Pomimo pozornej odmienności od typowych praktyk ćwiczeń zdrowotnych, ta wszechstronna forma ćwiczeń Qigong oferuje niezwykle skuteczne korzyści w wielu wymiarach dobrostanu ciała i umysłu.</p>
                 <p>Świadome praktyki podane w niniejszej książce zapewniają jasną ścieżkę, od technik podstawowych do bardziej subtelnych praktyk, czyniąc tę sztukę dostępną dla praktykujących na wszystkich poziomach, jednocześnie zachowując jej autentyczną esencję. Prezentacja każdego z ćwiczeń zawiera szczegółowe instrukcje, typowe korekty oraz stopniowe poziomy praktyki, aby dostosować się zarówno do początkujących, jak i doświadczonych praktykujących.</p>
                 <p>Czerpiąc z treningów w różnych tradycjach, autor dzieli się spostrzeżeniami zdobytymi poprzez dogłębne studia w Chinach kontynentalnych, Hongkongu, Japonii, Indonezji i Tajlandii. Doświadczenie to uzupełnione jest ponad dwudziestoletnią praktyką Jogi, której uczył się od joginów w Japonii i Indiach, certyfikatem nauczyciela Jogi uzyskanym za pośrednictwem IYF Asia w Korei Południowej, a także certyfikacją jako terapeuta tajskiego masażu leczniczego przyznaną przez TTMA Japan.</p>

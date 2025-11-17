@@ -13,11 +13,11 @@ translationKey: "home"
 
 <section id="books" class="upcoming-books">
     <div class="container">
-        <h2>Forthcoming Titles 2025 & 2026</h2>
+        <h2>Forthcoming Titles</h2>
         <div class="book-grid">
             <div class="book-item">
                 {% image "6e6c1.png", "Book cover - Polish translation of Selfless Self - Talks with Sri Ramakant Maharaj", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Selfless Self - Talks with Sri Ramakant Maharaj: Polish Translation (scheduled for 2025)</h3>
+                <h3>Selfless Self - Talks with Sri Ramakant Maharaj: Polish Translation (scheduled for 2026)</h3>
                 <p class="book-author">Author: Sri Ramakant Maharaj / English original edited by Ann Shaw</p>
                 <div class="book-description">
                 <p>A translation of the priceless teachings from a Master of the Navnath Sampradaya tradition</p>
@@ -30,7 +30,7 @@ translationKey: "home"
             </div>
             <div class="book-item">
                 {% image "34e6b.png", "Book cover - Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal", "(max-width: 480px) 160px, (max-width: 768px) 150px, 180px" %}
-                <h3>Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal (scheduled for 2025)</h3>
+                <h3>Bagua Chun Gen Qigong: A System for Health, Grounding, and Renewal (scheduled for 2026)</h3>
                 <div class="book-description"><p>This practical guide presents Bagua Chun Gen Qigong, a very rarely taught and never before documented Qigong form designed to promote physical wellbeing and energy cultivation. Though deceptively dissimilar to typical health exercise practices, this versatile form of Qigong offers remarkably effective benefits across multiple dimensions of wellbeing.</p>
                 <p>The deliberate practices introduced in this work provide a clear pathway from fundamental techniques to more nuanced practices, making this art accessible to practitioners at all levels while preserving its authentic essence. Each exercise is presented with detailed instructions, common corrections, and progressive levels of practice to accommodate both beginners and experienced practitioners.</p>
                 <p>Drawing from training across multiple traditions, the author shares insights gained through immersive study in Mainland China, Hong Kong, Japan, Indonesia, and Thailand. This experience is complemented by over two decades of Yoga practice learned from teachers in Japan and India, Yoga teaching certification obtained through IYF Asia in South Korea, as well as certification as a Therapeutic Thai bodywork therapist through TTMA Japan.</p>
